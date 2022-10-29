@@ -1,0 +1,13 @@
+html, body {
+  margin: 1rem 5vw;
+  font-size: 18px;
+}
+
+#input-form {
+  max-width: 1080px;
+  margin: auto;
+}
+
+#percentage-input {
+  max-width: 12rem;
+}
