@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   margin: 1rem 5vw;
   font-size: 18px;
 }
@@ -6,8 +7,28 @@ html, body {
 #input-form {
   max-width: 1080px;
   margin: auto;
+  gap: 1rem;
 }
 
 #percentage-input {
   max-width: 12rem;
+}
+
+#out {
+  min-height: 1.2rem;
+}
+
+@media screen and (min-height: 600px) {
+  #page-footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+  }
+}
+
+@media screen and (min-height: 700px) {
+  #input-form {
+    padding: 1rem 0;
+    gap: 2.5rem;
+  }
 }
