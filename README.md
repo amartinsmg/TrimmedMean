@@ -10,14 +10,15 @@ To use the Trimmed Mean Calculator, follow these steps:
 2. Enter the percentage of elements you want to trim from both ends of the set in the "Percentage to Trim" field.
 3. Click the "Calculate" button to get the trimmed mean.
 
-## Installation
+## How to run the project
 
-To install and run the Trimmed Mean Calculator on your local machine, follow these steps:
+To build and run the project, follow these steps:
 
 1. Clone this repository.
 2. Install the dependencies by running `yarn install`.
-3. Run the application by running `yarn dev`.
-4. Open your web browser and go to http://localhost:8080.
+3. Build the project by running `yarn build`.
+
+After the build process is complete, you can open the index.html file located in the 'dist' directory in your web browser to use the calculator.
 
 ## Contributing
 
