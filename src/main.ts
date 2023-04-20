@@ -1,5 +1,8 @@
 import "./main.css";
 import { trimmedMean } from "./trimmed_mean";
+
+// This is the main function that handles the form submit event to generate random numbers based on user input.
+
 function main() {
   const Form = document.querySelector("#input-form") as HTMLFormElement,
     NumbersInput = document.querySelector(
@@ -9,6 +12,12 @@ function main() {
       "#percentage-input"
     ) as HTMLInputElement,
     OutputEl = document.querySelector("#out") as HTMLElement;
+
+  /**
+    This function handles the form submit event.
+    @param e - The event object.
+    @returns - This function does not return anything.
+  */
 
   Form.addEventListener("submit", (e) => {
     e.preventDefault();
