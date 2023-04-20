@@ -1,8 +1,6 @@
 import "./main.css";
 import { trimmedMean } from "./trimmed_mean";
 
-// This is the main function that handles the form submit event to generate random numbers based on user input.
-
 function main() {
   const Form = document.querySelector("#input-form") as HTMLFormElement,
     NumbersInput = document.querySelector(
