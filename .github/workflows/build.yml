@@ -14,7 +14,6 @@ jobs:
         with:
           node-version: latest
       - uses: mskelton/setup-yarn@v1
-      - uses: mymindstorm/setup-emsdk@v11
       - name: Build web-app
         run: |
           yarn install
