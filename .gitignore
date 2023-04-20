@@ -1,4 +1,2 @@
-build
-debug
-lib
+dist
 node_modules
