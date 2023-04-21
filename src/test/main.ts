@@ -3,14 +3,11 @@ import { trimmedMean } from "../trimmed_mean";
 /**
   Throws an error if the condition is false
   @param condition - A boolean expression to be evaluated
-  @param message - An optional message to be displayed in the error
   @throws - Error if the condition is false 
  */
 
-function assert(condition: any, message?: string) {
-  if (!condition) {
-    throw new Error(message || "Assertion failed");
-  }
+function assert(condition: any) {
+  if (!condition) throw new Error("Assertion failed");
 }
 
 /**
