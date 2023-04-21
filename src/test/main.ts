@@ -11,10 +11,10 @@ function assert(condition: any) {
 }
 
 /**
-    Rounds a number to a specified number of decimal places
-    @param num - The number to be rounded
-    @param decimalPlaces - The number of decimal places to round to
-    @return - The rounded number
+  Rounds a number to a specified number of decimal places
+  @param num - The number to be rounded
+  @param decimalPlaces - The number of decimal places to round to
+  @return - The rounded number
   */
 
 function roundTo(num: number, decimalPlaces: number): number {
@@ -28,6 +28,7 @@ function roundTo(num: number, decimalPlaces: number): number {
   The tests pass if all five assertions succeed. If any of the assertions fail, an error will be thrown.
   Finally, a success message is logged to the console.
  */
+
 void (function () {
   const Arr = [-10, 2, 2, 2, 2, 2, 3, 3, 4, 4, 5, 5, 6, 7, 7, 8, 8, 8, 10, 11];
   assert(roundTo(trimmedMean(Arr, 5), 6) == 4.888889);
