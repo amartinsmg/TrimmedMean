@@ -1,6 +1,8 @@
 import "./main.css";
 import { trimmedMean } from "./trimmed_mean";
 
+// The main function that handles the form submit event to calculate the trimmed mean of the set of numerical data based on user input.
+
 function main() {
   const Form = document.querySelector("#input-form") as HTMLFormElement,
     NumbersInput = document.querySelector(
@@ -14,9 +16,7 @@ function main() {
   /**
     This function handles the form submit event.
     @param e - The event object.
-    @returns - This function does not return anything.
   */
-
   Form.addEventListener("submit", (e) => {
     e.preventDefault();
     const StrNumbers = NumbersInput.value.split(/\s*,\s*/),
@@ -31,5 +31,7 @@ function main() {
     }
   });
 }
+
+// Execute the main function on page load.
 
 window.addEventListener("load", main);
