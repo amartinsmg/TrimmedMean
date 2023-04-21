@@ -26,4 +26,4 @@ Contributions to the Trimmed Mean Calculator are welcome! If you find a bug or h
 
 ## License
 
-The Trimmed Mean Calculator is licensed under the MIT [License](./LICENSE). See the LICENSE file for details.
+The Trimmed Mean Calculator is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
