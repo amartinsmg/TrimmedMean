@@ -1,11 +1,8 @@
 {
-  "name": "trimmedmean",
+  "name": "trimmed_mean",
   "version": "1.0.0",
   "main": "src/main.ts",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/amartinsmg/TrimmedMean.git"
-  },
+  "repository": "git+https://github.com/amartinsmg/TrimmedMean.git",
   "scripts": {
     "build": "webpack",
     "dev": "webpack serve",
