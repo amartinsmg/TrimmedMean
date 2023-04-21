@@ -14,15 +14,12 @@ function mean(values: number[]): number {
 }
 
 /**
-  Calculates the trimmed mean of an array of numbers. The trimmed mean is calculated by sorting
-    the array, removing the specified percentage of elements from the beginning and end of the
-    array, and then calculating the mean of the remaining elements.
+  Calculates the trimmed mean of an array of numbers. The trimmed mean is calculated by sorting the array, removing the specified percentage
+  of elements from the beginning and end of the array, and then calculating the mean of the remaining elements.
     @param values - An array of numbers
-    @param trimmedMeanPercentage - The percentage of elements to be trimmed from the beginning
-      and end of the sorted array
+    @param trimmedMeanPercentage - The percentage of elements to be trimmed from the beginning and end of the sorted array
     @returns - The trimmed mean of the array
-    @throws - An error if the number of elements to be trimmed is greater than or equal to the
-      length of the array.
+    @throws - An error if the number of elements to be trimmed is greater than or equal to the length of the array.
 */
 
 export function trimmedMean(
