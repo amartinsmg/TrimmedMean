@@ -1,4 +1,4 @@
-import { trimmedMean } from "../trimmed_mean";
+import { trimmedMean } from "../src/ts/trimmed_mean";
 
 /**
   Throws an error if the condition is false
