@@ -1,29 +1,62 @@
-# Trimmed Mean Calculator
+# TrimmedMeanCalculator
 
-The Trimmed Mean Calculator is a web application that calculates the trimmed mean of a set of numbers based on a user-defined percentage of elements to be trimmed from both ends of the set.
+The **Trimmed Mean Calculator** is a streamlined web application designed to provide a more accurate measure of central tendency by filtering out extreme values. By removing a user-defined percentage of outliers from both the top and bottom of a dataset, it ensures your statistical analysis remains robust and representative.
 
-## Usage
+---
 
-To use the Trimmed Mean Calculator, follow these steps:
+## 👨‍💻 Tech Stack
 
-1. Enter the set of numbers you want to calculate the trimmed mean for in the "Numbers" field.
-2. Enter the percentage of elements you want to trim from both ends of the set in the "Percentage to Trim" field.
-3. Click the "Calculate" button to get the trimmed mean.
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3)
+![Babel](https://img.shields.io/badge/Babel-F9DC3E)
+![Webpack](https://img.shields.io/badge/Webpack-8DD6F9)
+![Yarn](https://img.shields.io/badge/Yarn-2C8EBB)
 
-## How to run the project
+---
 
-To build and run the project, follow these steps:
+## 🎯 Key Features
 
-1. Clone this repository.
-2. Install the dependencies by running `yarn install`.
-3. Build the project by running `yarn build`.
+- **Customizable Trimming**: Effortlessly define the exact percentage of data to be excluded from both ends of the distribution.
+- **Client-Side Computation**: Powered by optimized JavaScript directly in the browser, providing instant results without server-side latency.
+- **Comprehensive Numeric Support**: Handles both integers and floating-point numbers (decimals) for precise statistical analysis.
+- **Outlier Resilience**: Automatically mitigates the impact of extreme values that typically skew a standard arithmetic mean.
 
-After the build process is complete, you can open the index.html file located in the 'dist' directory in your web browser to use the calculator.
+---
 
-## Contributing
+## ⚙️ Technical Note
 
-Contributions to the Trimmed Mean Calculator are welcome! If you find a bug or have a feature request, please open an issue or submit a pull request.
+The calculation is performed entirely on the client side, ensuring privacy and immediate feedback. For a dataset $X$ sorted as $x_{(1)} \le x_{(2)} \le \dots \le x_{(n)}$, the app identifies and removes the $k$ smallest and $k$ largest values based on your input percentage.
 
-## License
+---
 
-The Trimmed Mean Calculator is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
+## 💻 How to run the project
+
+Follow the instructions below to set up the development environment on your machine:
+
+Step 1: Clone this repo using `git clone`.
+
+Step 2: Inside the project folder, run `yarn install` to download all necessary packages.
+
+Step 3: Launch the local server with the following command:
+
+```sh
+yarn dev
+```
+
+The application will be available at your localhost. The server will automatically reload if you make any changes to the source files!
+
+---
+
+## 💡 Contributing
+
+Contributions are what make the open-source community thrive. Feel free to:
+
+- **Open an issue** for bugs or feature requests.
+- **Submit a pull request** with your improvements.
+
+---
+
+## 📜 License
+
+Distributed under the MIT License.
+See the [LICENSE](./LICENSE) file for details.
