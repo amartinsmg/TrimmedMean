@@ -29,7 +29,7 @@ export function trimmedMean(
   const k = Math.round((values.length * trimmedMeanPercentage) / 100);
   if (2 * k >= values.length) {
     throw new Error(
-      `The number of elements to be trimmed (${k}) is greater than or equal to the length of the array (${values.length}).`,
+      `The number of elements to be trimmed (${2 * k}) is greater than or equal to the length of the array (${values.length}).`,
     );
   }
   const sortedValues = values.sort((a, b) => a - b),
