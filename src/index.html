@@ -7,7 +7,7 @@
     <title>Trimmed Mean Calculator</title>
     <link
       rel="shortcut icon"
-      href="../public/favicon.ico"
+      href="../assets/favicon.ico"
       type="image/x-icon"
     />
     <link
@@ -17,7 +17,7 @@
   </head>
   <body>
     <header id="page-header">
-      <h1 id="page-header-heading">Trimmed Mean Calculator</h1>
+      <h1 class="text-center" id="page-header-heading">Trimmed Mean Calculator</h1>
     </header>
     <main>
       <form
@@ -26,11 +26,12 @@
       >
         <div class="d-flex flex-column gap-1 form-group w-100">
           <label for="numbers-input" class="text-center text-md-start"
-            >Numbers:</label
+            >Dataset:</label
           >
           <textarea
-            name="numbers"
-            id="numbers-input"
+            name="dataset"
+            id="dataset-input"
+            inputmode="decimal"
             class="form-control w-100"
             placeholder="Enter the numbers separeted by comma"
             rows="4"
