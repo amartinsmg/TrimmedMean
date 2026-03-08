@@ -8,9 +8,9 @@
 function mean(values: number[]): number {
   if (values.length == 0)
     throw new Error("Insert an array with at least one number.");
-  const SUM = values.reduce((acc, val) => acc + val, 0),
-    RESULT = SUM / values.length;
-  return RESULT;
+  const sum = values.reduce((acc, val) => acc + val, 0),
+    result = sum / values.length;
+  return result;
 }
 
 /**
@@ -24,20 +24,15 @@ function mean(values: number[]): number {
 
 export function trimmedMean(
   values: number[],
-  trimmedMeanPercentage: number
+  trimmedMeanPercentage: number,
 ): number {
-  const N_ELEMENTS_TO_TRIM = Math.round(
-      (values.length * trimmedMeanPercentage) / 100
-    ),
-    SortedValues = values.sort((a, b) => a - b);
-  if (N_ELEMENTS_TO_TRIM >= SortedValues.length) {
+  const k = Math.round((values.length * trimmedMeanPercentage) / 100);
+  if (k >= values.length) {
     throw new Error(
-      `The number of elements to be trimmed (${N_ELEMENTS_TO_TRIM}) is greater than or equal to the length of the array (${SortedValues.length}).`
+      `The number of elements to be trimmed (${k}) is greater than or equal to the length of the array (${values.length}).`,
     );
   }
-  const TrimmedValues = SortedValues.slice(
-    N_ELEMENTS_TO_TRIM,
-    SortedValues.length - N_ELEMENTS_TO_TRIM
-  );
-  return mean(TrimmedValues);
+  const sortedValues = values.sort((a, b) => a - b),
+    trimmedValues = sortedValues.slice(k, sortedValues.length - k);
+  return mean(trimmedValues);
 }
