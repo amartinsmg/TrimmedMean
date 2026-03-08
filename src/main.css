@@ -1,7 +1,8 @@
 html,
 body {
-  margin: 1rem 5vw;
+  padding: 1rem 5vw;
   font-size: 18px;
+  height: 100%;
 }
 
 #input-form {
@@ -20,14 +21,6 @@ body {
 
 #copy-out {
   width: fit-content;
-}
-
-@media screen and (min-height: 600px) {
-  #page-footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-  }
 }
 
 @media screen and (min-height: 700px) {
