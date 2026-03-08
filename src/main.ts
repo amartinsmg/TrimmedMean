@@ -1,7 +1,6 @@
 import "./main.css";
 import { trimmedMean } from "./ts/trimmed_mean";
 
-
 // Initializes the application by setting up DOM elements and event listeners.
 
 function main() {
@@ -32,6 +31,7 @@ function main() {
       copyOutBtn.disabled = false;
     } catch (err) {
       outputEl.textContent = err instanceof Error ? err.message : String(err);
+      copyOutBtn.disabled = true;
     }
   });
 
