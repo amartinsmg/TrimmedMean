@@ -15,10 +15,10 @@ jobs:
         with:
           node-version: latest
           cache: yarn
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
       - name: Build web-app
-        run: |
-          yarn install
-          yarn build
+        run: yarn build
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
