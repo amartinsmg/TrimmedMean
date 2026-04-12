@@ -1,5 +1,5 @@
-import "./main.css";
-import { trimmedMean } from "./ts/trimmed_mean";
+import "../css/style.css";
+import { trimmedMean } from "./trimmed_mean";
 
 // Initializes the application by setting up DOM elements and event listeners.
 
