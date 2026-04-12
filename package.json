@@ -9,9 +9,6 @@
     "test": "ts-node tests/main.ts"
   },
   "devDependencies": {
-    "@babel/core": "^7.19.6",
-    "@babel/preset-env": "^7.19.4",
-    "babel-loader": "^10.1.0",
     "css-loader": "^7.1.4",
     "css-minimizer-webpack-plugin": "^8.0.0",
     "html-loader": "^5.1.0",
