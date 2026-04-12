@@ -13,7 +13,7 @@ module.exports = {
     The entry point for the application.
    */
 
-  entry: "./src/main.ts",
+  entry: "./src/ts/main.ts",
 
   /**
     The output configuration for the bundled files.
@@ -59,12 +59,7 @@ module.exports = {
     rules: [
       {
         test: /\.ts$/i,
-        use: ["babel-loader", "ts-loader"],
-        exclude: /node_modules/,
-      },
-      {
-        test: /\.js$/i,
-        use: "babel-loader",
+        use: ["ts-loader"],
         exclude: /node_modules/,
       },
       {
