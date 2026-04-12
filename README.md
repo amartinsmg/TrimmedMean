@@ -8,7 +8,8 @@ The **Trimmed Mean Calculator** is a streamlined web application designed to pro
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6)
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3)
-![Babel](https://img.shields.io/badge/Babel-F9DC3E)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6)
 ![Webpack](https://img.shields.io/badge/Webpack-8DD6F9)
 ![Yarn](https://img.shields.io/badge/Yarn-2C8EBB)
 
