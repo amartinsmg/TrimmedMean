@@ -1,3 +1,4 @@
+// @ts-ignore
 import "../css/style.css";
 import { trimmedMean } from "./trimmed_mean";
 
