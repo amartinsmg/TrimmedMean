@@ -1,19 +1,17 @@
-// @ts-ignore
-import "../css/style.css";
-import { trimmedMean } from "./trimmed_mean";
+import { trimmedMean } from "./js/trimmed_mean.js";
 
 // Initializes the application by setting up DOM elements and event listeners.
 
 function main() {
-  const form = document.querySelector("#input-form") as HTMLFormElement,
+  const form = document.querySelector("#input-form"),
     datasetInput = document.querySelector(
       "#dataset-input",
-    ) as HTMLTextAreaElement,
+    ),
     percentageInput = document.querySelector(
       "#percentage-input",
-    ) as HTMLInputElement,
-    outputEl = document.querySelector("#out") as HTMLElement,
-    copyOutBtn = document.querySelector("#copy-out") as HTMLButtonElement;
+    ),
+    outputEl = document.querySelector("#out"),
+    copyOutBtn = document.querySelector("#copy-out");
 
   /**
     This function handles the form submit event.
