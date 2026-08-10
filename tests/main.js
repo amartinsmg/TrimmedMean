@@ -1,4 +1,4 @@
-import { trimmedMean } from "../src/ts/trimmed_mean";
+import { trimmedMean } from "../src/js/trimmed_mean.js";
 
 /**
  Rounds a number to a specified number of decimal places
@@ -7,7 +7,7 @@ import { trimmedMean } from "../src/ts/trimmed_mean";
  @return - The rounded number
  */
 
-function roundTo(num: number, decimalPlaces: number): number {
+function roundTo(num, decimalPlaces) {
   let base10 = 10 ** decimalPlaces,
     result = Math.round(num * base10) / base10;
   return result;
@@ -23,7 +23,7 @@ function roundTo(num: number, decimalPlaces: number): number {
  * * @throws {Error} If the rounded `actual` value does not strictly equal `expected`.
  */
 
-function check(actual: number, expected: number) {
+function check(actual, expected) {
   const condition = roundTo(actual, 6) == expected;
   if (!condition)
     throw new Error(`Test failed: Expected: ${expected}, received: ${actual}`);
