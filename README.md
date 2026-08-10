@@ -6,11 +6,11 @@ The **Trimmed Mean Calculator** is a streamlined web application designed to pro
 
 ## 👨‍💻 Tech Stack
 
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E)
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6)
-![Webpack](https://img.shields.io/badge/Webpack-8DD6F9)
+![Vite](https://img.shields.io/badge/Vite-646CFF)
 ![Yarn](https://img.shields.io/badge/Yarn-2C8EBB)
 
 ---
@@ -44,7 +44,7 @@ Step 3: Launch the local server with the following command:
 yarn dev
 ```
 
-The application will be available at your localhost. The server will automatically reload if you make any changes to the source files!
+The application will be available at `http://localhost:5173`. The server will automatically reload if you make any changes to the source files!
 
 ---
 
