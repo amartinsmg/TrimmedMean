@@ -1,24 +1,16 @@
 {
   "name": "trimmed_mean",
-  "version": "1.0.0",
-  "main": "src/main.ts",
+  "version": "2.0.0",
+  "main": "src/main.js",
   "repository": "git+https://github.com/amartinsmg/TrimmedMean.git",
   "scripts": {
-    "build": "webpack",
-    "dev": "webpack serve",
-    "test": "ts-node tests/main.ts"
+    "build": "vite build",
+    "dev": "vite",
+    "test": "node tests/main.js"
   },
   "devDependencies": {
-    "css-loader": "^7.1.4",
-    "css-minimizer-webpack-plugin": "^8.0.0",
-    "html-loader": "^5.1.0",
-    "html-webpack-plugin": "^5.5.0",
-    "mini-css-extract-plugin": "^2.6.1",
-    "ts-loader": "^9.4.1",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.9.3",
-    "webpack": "^5.74.0",
-    "webpack-cli": "^6.0.1",
-    "webpack-dev-server": "^5.2.3"
-  }
+    "vite": "^8.2.1"
+  },
+  "author": "amartinsmg <andremindurimg@gmail.com>",
+  "license": "MIT"
 }
