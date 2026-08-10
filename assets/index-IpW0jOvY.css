@@ -1,0 +1,1 @@
+html,body{height:100%;padding:1rem 5vw;font-size:18px}#input-form{gap:1rem;max-width:1080px;margin:auto}#percentage-input{max-width:12rem}#out{min-height:1.4rem}#copy-out{width:fit-content}@media screen and (height>=700px){#input-form{gap:2.5rem;padding:1rem 0}}
