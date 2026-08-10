@@ -5,7 +5,7 @@
     @throws - If the input array is empty
 */
 
-function mean(values: number[]): number {
+function mean(values) {
   if (values.length == 0)
     throw new Error("Insert an array with at least one number.");
   const sum = values.reduce((acc, val) => acc + val, 0),
@@ -23,9 +23,9 @@ function mean(values: number[]): number {
 */
 
 export function trimmedMean(
-  values: number[],
-  trimmedMeanPercentage: number,
-): number {
+  values,
+  trimmedMeanPercentage,
+) {
   const k = Math.round((values.length * trimmedMeanPercentage) / 100);
   if (2 * k >= values.length) {
     throw new Error(
